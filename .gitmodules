@@ -1,0 +1,12 @@
+[submodule "naas-matlab"]
+	path = naas-matlab
+	url = https://baltig.infn.it/fornari/naas-matlab
+[submodule "naas-matlab-parallel"]
+	path = naas-matlab-parallel
+	url = https://baltig.infn.it/fornari/naas-matlab-parallel
+[submodule "jupyter-matlab"]
+	path = jupyter-matlab
+	url = https://baltig.infn.it/fornari/jupyter-matlab
+[submodule "jupyter-matlab-parallel"]
+	path = jupyter-matlab-parallel
+	url = https://baltig.infn.it/fornari/jupyter-matlab-parallel
