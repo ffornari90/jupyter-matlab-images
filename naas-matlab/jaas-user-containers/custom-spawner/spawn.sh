@@ -25,10 +25,10 @@ mkdir -p /opt/user_data/cache/scratch
 
 cd /.init/
 
-./sts-wire https://iam.cloud.infn.it/  ${USERNAME} https://minio.cloud.infn.it/ /${USERNAME} ../s3/${USERNAME}  \
+./sts-wire https://iam.cloud.infn.it/  ${USERNAME} https://rgw.cloud.infn.it/ IAMaccess object /${USERNAME} ../s3/${USERNAME}  \
     --localCache full --tryRemount --noDummyFileCheck \
     --localCacheDir "/opt/user_data/cache/${USERNAME}" > .mount_log_${USERNAME}.txt &
 
-./sts-wire https://iam.cloud.infn.it/ scratch https://minio.cloud.infn.it/  /scratch ../s3/scratch  \
+./sts-wire https://iam.cloud.infn.it/ scratch https://rgw.cloud.infn.it/ IAMaccess object  /scratch ../s3/scratch  \
     --localCache full --tryRemount --noDummyFileCheck \
     --localCacheDir "/opt/user_data/cache/scratch" > .mount_log_scratch.txt &
