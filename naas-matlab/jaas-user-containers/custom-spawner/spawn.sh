@@ -7,6 +7,7 @@ oidc-gen infncloud --issuer $IAM_SERVER \
  --client-id $IAM_CLIENT_ID \
  --client-secret $IAM_CLIENT_SECRET \
  --rt $REFRESH_TOKEN \
+ --audience=object \
  --confirm-yes \
  --scope "openid profile email" \
  --redirect-uri http://localhost:8843 \
