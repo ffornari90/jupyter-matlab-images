@@ -52,7 +52,7 @@ RUN chmod +x /usr/local/bin/jupyterhub-singleuser \
     && chmod +x ./.init/spawn.sh
 
 RUN mkdir -p .init \
-    && wget https://github.com/DODAS-TS/sts-wire/releases/download/v2.1.2/sts-wire_linux -O ./.init/sts-wire \
+    && wget https://github.com/DODAS-TS/sts-wire/releases/download/v2.1.3-rados/sts-wire_linux -O ./.init/sts-wire \
     && chmod +x ./.init/sts-wire
 
 #RUN mkdir ${JUPYTER_ROOT}
